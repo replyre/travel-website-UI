@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  padding: 30px 60px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  transition: all 1s;
+}
+header .logo img {
+  height: 30px;
+  filter: invert(100%);
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transform: scale(1.5);
+  color: white;
+  font-weight: bolder;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  gap: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.main-section {
+  background-image: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-image: url(""); */
+  height: 110vh;
+}
+
+.social span {
+  transition: all 1s;
+}
+.social:hover > span svg g polygon {
+  fill: azure;
+}
+
+span svg g polygon {
+  fill: #3d5dec;
+}
+.social:hover > i {
+  color: #3d5dec;
+  /* background-color: rgb(55, 91, 118); */
+}
+
+.main-section-content {
+  width: 50%;
+  height: 30%;
+  margin: 10% auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-section-content h1 {
+  font-size: 50px;
+  color: white;
+  padding: 20px 0px;
+}
+
+.main-section-content p {
+  color: white;
+  font-size: 25px;
+  text-shadow: 0px 0px 7px black;
+  padding: 10px;
+}
+
+.main-section-content button,
+.container-4 div form button,
+.container-5 button {
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 0px;
+  color: white;
+  background-color: #5694e4;
+  cursor: pointer;
+}
+
+.container-1 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.img-1 {
+  background-image: url("./2.jpg");
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  cursor: pointer;
+}
+.img-1:hover {
+  transform: scale(1.2);
+}
+
+.container-2 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  height: 60vh;
+}
+
+.container-2 div h3 {
+  font-size: 28px;
+}
+
+.container-2 div p {
+  font-size: 18px;
+  color: gray;
+  text-align: justify;
+}
+
+.container-3 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.container-3 p {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.container-3 h2 {
+  font-size: 30px;
+}
+.cards {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.cards div {
+  width: 25%;
+  height: 100%;
+  text-align: left;
+  text-align: center;
+  padding: 0px 30px;
+  border: 1px grey solid;
+  border-radius: 20px;
+}
+.cards div img {
+  position: relative;
+  left: -10.3%;
+  height: 10%;
+  width: 120.7%;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+}
+
+.cards div p {
+  padding: 10px 0;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.cards div ul {
+  padding-left: 1px;
+  padding: 10px 0;
+  padding-left: 12px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.cards div ul li::marker {
+  color: #3d5dec;
+}
+
+.cards div button {
+  position: relative;
+  top: 20px;
+  background-color: #3d5dec;
+  color: white;
+  padding: 10px 30px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.container-4 {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #033c88;
+  padding: 20px 10%;
+  gap: 4%;
+}
+.container-4 div p:nth-child(1) {
+  color: #95a8fa;
+  font-size: 18px;
+}
+.container-4 div {
+  width: 50%;
+  line-height: 35px;
+  padding: 20px;
+  color: white;
+  /* background-color: antiquewhite; */
+}
+
+.container-4 div h2 {
+  padding: 2px 0px 10px 0px;
+}
+
+.container-4 div p:nth-last-child(2) {
+  font-size: 18px;
+}
+.container-4 div ul {
+  padding: 15px;
+  font-size: 17px;
+}
+.container-4 div ul li::marker,
+.container-1 ul li::marker {
+  color: #95a8fa;
+}
+
+.container-4 div form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.container-4 div form input:not(input[type="checkbox"]),
+.container-4 div form select {
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: 2px rgb(203, 242, 247) solid;
+  font-size: 18px;
+  color: rgb(203, 242, 247);
+}
+
+.container-4 div form input::placeholder {
+  color: rgb(203, 242, 247);
+}
+.container-4 div form span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.container-4 div form button {
+  width: 100%;
+}
+
+.container-4 div form select {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.container-4 div form select option {
+  background-color: #033c88;
+}
+.container-5 {
+  width: 100%;
+  height: 80vh;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #3d5dec; */
+  text-align: center;
+  gap: 12px;
+}
+.container-5 p {
+  color: #3d5dec;
+}
+.container-5 .button-selections {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+}
+.img-collection {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  margin: 20px 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-collection span {
+  background-color: black;
+  height: 180px;
+  width: 200px;
+
+  transition: all 0.5s;
+}
+.img-collection span img {
+  height: 100%;
+  width: 100%;
+}
+.img-collection span p {
+  display: none;
+  color: white;
+  position: relative;
+  bottom: 50%;
+}
+.img-collection img:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+}
+.img-collection span:hover p {
+  display: block;
+}
+
+.img-collection img:hover,
+.img-collection span {
+  color: red;
+}
+.button-selections button:not(:nth-child(1)) {
+  background-color: rgb(240, 238, 238);
+  color: grey;
+  font-weight: bold;
+}
+.number-collection {
+  display: flex;
+  gap: 7%;
+  justify-content: space-around;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 15px);
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.2);
+}
+.number-collection div div {
+  font-weight: bolder;
+}
+
+.number-collection div .d1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #033c88;
+}
+
+.black,
+.black div {
+  color: black;
+  background-color: white;
+}
+
+.black p:nth-last-child(3) {
+  line-height: 20px;
+
+  padding: 5% 0;
+}
+
+.black p:nth-last-child(2) {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 18px;
+  /* justify-content: end; */
+}
+
+.black p span i {
+  font-size: 18px;
+  padding: 0 10px;
+}
+.black div form {
+  align-items: start;
+}
+.black div form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+.black div form input {
+  color: black !important;
+  border: 1px solid grey !important;
+}
+.black div form input::placeholder {
+  color: grey;
+}
+
+.black div li:hover {
+  transform: scale(2);
+  color: #033c88;
+}
+.black div li:hover > span svg g polygon {
+  fill: azure;
+}
+
+.container-6 {
+  padding: 10% 10%;
+  width: 100%;
+  background-color: #033c88;
+  display: flex;
+  gap: 10%;
+}
+
+.container-6 div h2 {
+  color: white;
+  padding-bottom: 20px;
+}
+.container-6 p {
+  color: white;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.container-6 a {
+  color: white;
+  line-height: 30px;
+  padding: 10px 0px;
+  font-size: 18px;
+}
